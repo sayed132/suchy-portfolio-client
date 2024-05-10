@@ -15,7 +15,7 @@ const PortfolioDetail = () => {
   })
 
   return (
-    <div className=" px-8 shadow-lg bg-[#0B1120] m-5">
+    <div className=" px-8 shadow-lg bg-gradient-to-r from-[#232f35] to-[#143545] m-5 h-[100vh] rounded-md flex  items-center">
       <div className="grid grid-cols-7 gap-5 lg:mx-8 p-5 items-center">
         <div className="col-span-full lg:col-span-2 text-justify">
           <div className="mb-3">
@@ -57,7 +57,7 @@ const PortfolioDetail = () => {
               ))}
             </div> */}
             <div
-              className="w-full h-72 sm:h-96 md:h-[540px] flex flex-col items-center justify-center gap-5 lg:gap-10 rounded-lg  transform duration-1000 ease-linear"
+              className="w-full lg:w-4/5  sm:h-96 md:h-[540px] flex flex-col items-center justify-center gap-5 lg:gap-10 rounded-lg  transform duration-1000 ease-linear"
               // style={{ backgroundImage: `url(${item.images[currentSlider].url})`}}
             >
               <img

@@ -9,25 +9,15 @@ const navigation = [
   { name: "Portfolio", to: "/portfolios" },
   { name: "About Me", to: "/about" },
   { name: "Contact", to: "/contact" },
+  { name: "Courses", to: "/course" },
   { name: "Blog", to: "/blog" },
 ];
 
 export default function Navbar() {
 
-  // const [profile, setProfile] = useState([]);
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //     fetch('https://suchy-portfolio-server.onrender.com/profile')
-  //         .then(res => res.json())
-  //         .then(data => {
-  //           setProfile(data.data[0]);
-  //             console.log(profile, " loaded ");
-  //         });
-  // }, [])
-
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-[#0C1222] to-[#0B1220] rounded-b-md sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-gradient-to-r from-[#232f35] to-[#143545] rounded-b-md sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
