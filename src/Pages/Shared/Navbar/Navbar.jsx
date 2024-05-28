@@ -17,7 +17,7 @@ export default function Navbar() {
 
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-[#232f35] to-[#143545] rounded-b-md sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-gradient-to-r from-[#0C1222] to-[#0B1220] rounded-b-md sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -60,11 +60,11 @@ export default function Navbar() {
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
                     <span className="mr-3 text-white  text-md font-bold capitalize">
-                      sanjida suchy
+                      Abu Sayed
                     </span>
                     <img
                       className="h-8 w-8 rounded-full"
-                      src={`https://i.ibb.co/9Z586zd/Modern-Minimal-Elegant-Signature-Photography-Logo.png`}
+                      src={`https://i.ibb.co/BG4KrKW/sayed-logo.png`}
                       alt="portfolio logo"
                     />
                     

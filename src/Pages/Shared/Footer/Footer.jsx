@@ -10,7 +10,7 @@ const Footer = () => {
     queryKey: ["contact"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/profile"
+        "https://sayed-portfolio-server.onrender.com/profile"
       );
       const data = await res.json();
       console.log(data, "profile");
@@ -20,9 +20,9 @@ const Footer = () => {
   console.log(user);
 
   return (
-    <footer className="px-4  bg-gradient-to-r from-[#232f35] to-[#143545] rounded-t-md md:flex items-center justify-around">
+    <footer className="px-4  bg-gradient-to-r from-[#0C1222] to-[#0B1220]  rounded-t-md md:flex items-center justify-around">
       <div className="py-6 text-sm text-center dark:text-gray-400">
-        © 2024 All rights reserved. Sanjida Suchy
+        © 2024 All rights reserved. Abu Sayed
       </div>
       <div className="flex justify-center items-center pb-4 md:pb-0">
         <div className="flex items-center">

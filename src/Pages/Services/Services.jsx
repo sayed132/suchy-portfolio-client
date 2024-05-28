@@ -6,7 +6,7 @@ const Services = () => {
   const { data: service = [], isLoading } = useQuery({
     queryKey: ['all-service'],
     queryFn: async () => {
-      const res = await fetch("https://suchy-portfolio-server.onrender.com/service/all");
+      const res = await fetch("https://sayed-portfolio-server.onrender.com/service/all");
       const data = await res.json();
       return data.service; // Assuming the data structure contains the service array at the top level
     },
@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <div id="services" className="w-full px-8 my-5">
       <div className="w-full flex flex-col items-center justify-center my-12 mx-auto">
-        <img className="w-80 " src="w-ido.png" alt="What I Do" />
+        <img className="w-80 " src="what-can-ido.png" alt="What I Do" />
         <h2 className="py-5 lg:text-5xl text-3xl font-bold tracking-widest">
           What Can I Do?
         </h2>
@@ -45,7 +45,7 @@ const Services = () => {
           service?.map((item) => (
             <div
               key={item._id}
-              className="col-span-full sm:col-span-6 lg:col-span-4 p-4 shadow-2xl bg-gradient-to-r from-[#232f35] to-[#143545] font-sans rounded-xl transition-transform hover:scale-105"
+              className="col-span-full sm:col-span-6 lg:col-span-4 p-4 shadow-2xl bg-gradient-to-r from-[rgba(17, 20, 29, 0.5)] to-[#0e1627] font-sans rounded-xl transition-transform hover:scale-105"
             >
               <div className="flex justify-center w-full h-56 object-center sm:h-48">
                 <img

@@ -9,7 +9,7 @@ const AboutMe = () => {
   const { data: user = [], isLoading } = useQuery({
     queryKey: ['about'],
     queryFn: async () => {
-      const res = await fetch("https://suchy-portfolio-server.onrender.com/profile");
+      const res = await fetch("https://sayed-portfolio-server.onrender.com/profile");
       const data = await res.json();
       console.log(data, "profile");
       return data.user[0];
@@ -30,7 +30,7 @@ const AboutMe = () => {
   return (
     <div id="about" className="w-full px-8">
       <div className="w-full flex flex-col items-center justify-center my-12 mx-auto">
-        <img className="w-80" src="intro.png" alt="INTRODUCE MYSELF" />
+        <img className="w-80" src="abt.png" alt="INTRODUCE MYSELF" />
         <h2 className="py-5 lg:text-5xl text-3xl text-center font-bold tracking-widest">
           LET ME INTRODUCE MYSELF
         </h2>

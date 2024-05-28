@@ -6,7 +6,7 @@ const Hero = () => {
   const { data: user = [], isLoading } = useQuery({
     queryKey: ['profile'],
     queryFn: async () => {
-      const res = await fetch("https://suchy-portfolio-server.onrender.com/profile");
+      const res = await fetch("https://sayed-portfolio-server.onrender.com/profile");
       const data = await res.json();
       console.log(data, "profile");
       return data.user[0];
@@ -51,13 +51,13 @@ const Hero = () => {
                 {user.workTitle}.
               </span>
               <p className="lg:text-lg sm:text-base text-sm ">
-                Be a good human and be a great future.
+                Be a good human and create your great future.
               </p>
               <div className="flex space-x-4 items-center">
                 <Link to={"/portfolios"}>
                   <button className="flex items-center relative w-48 border-2 hover:border-purple-600 duration-300 border-sky-500 text-lightgray p-3 rounded-lg group">
                     <span className="text-sm ">See The Latest Work</span>
-                    <span className="absolute w-1/12 right-3 group-hover:w-11/12 box-content duration-300 flex justify-center bg-[#37474F] rounded-sm">
+                    <span className="absolute w-1/12 right-3 group-hover:w-11/12 box-content duration-300 flex justify-center bg-[#0F172A] rounded-sm">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"

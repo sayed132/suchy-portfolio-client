@@ -10,7 +10,7 @@ const Test = () => {
   const [profile, setProfile] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://suchy-portfolio-server.onrender.com/profile")
+    fetch("https://sayed-portfolio-server.onrender.com/profile")
       .then((res) => res.json())
       .then((data) => {
         setProfile(data.data[0]);

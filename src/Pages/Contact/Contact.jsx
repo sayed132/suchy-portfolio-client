@@ -13,7 +13,7 @@ const Contact = () => {
     queryKey: ["contact"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/profile"
+        "https://sayed-portfolio-server.onrender.com/profile"
       );
       const data = await res.json();
       console.log(data, "profile");
@@ -42,7 +42,7 @@ const Contact = () => {
   };
   return (
     <div className="">
-      <div className="flex  items-center justify-center bg-[#8EA7E9]/20 p-6 md:p-0">
+      <div className="flex  items-center justify-center bg-gradient-to-r from-[#1a1f31] to-[#121f3b] p-6 md:p-0">
         <div className="flex h-full my-5 w-full overflow-hidden rounded-xl shadow-md  md:h-[90%] md:w-[80%] lg:h-[80%]">
           {/* register design side  */}
           <div className="relative hidden  items-center justify-center bg-[#8EA7E9] md:flex md:w-[60%] lg:w-[40%]">
